@@ -13,6 +13,9 @@ export function Home() {
   };
 
   const pages = [
+    { name: 'Slopsquat', path: '/slopsquatting', desc: 'Install malware via AI package hallucinations.' },
+    { name: 'DB Hacks', path: '/localstorage-db', desc: 'Why use Postgres when localStorage is free?' },
+    { name: 'Regex Bomb', path: '/regex-bomb', desc: 'Trigger a server-freezing ReDoS attack.' },
     { name: 'Influence', path: '/thought-leader', desc: 'Generate cringe LinkedIn posts about vibe coding.' },
     { name: 'NPM', path: '/npm-install', desc: 'Watch AI download 14k packages.' },
     { name: 'PR Review', path: '/pr-review', desc: 'AI hallucinates reasons for bad code.' },

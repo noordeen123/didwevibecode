@@ -7,13 +7,13 @@ export function NavigationBar() {
   const links = [
     { name: 'Home', path: '/' },
     { name: '🚨 True Stories', path: '/true-stories' },
+    { name: 'Slopsquat', path: '/slopsquatting' },
+    { name: 'DB', path: '/localstorage-db' },
+    { name: 'ReDoS', path: '/regex-bomb' },
     { name: 'Influence', path: '/thought-leader' },
     { name: 'NPM', path: '/npm-install' },
-    { name: 'PR Review', path: '/pr-review' },
-    { name: 'Agile', path: '/agile' },
-    { name: 'Copilot', path: '/copilot' },
-    { name: 'Context', path: '/context' },
     { name: 'Tests', path: '/tests' },
+    { name: 'Productivity', path: '/productivity' },
   ];
 
   return (
