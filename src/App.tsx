@@ -19,6 +19,10 @@ import { TrueStories } from './pages/TrueStories';
 import { Slopsquatting } from './pages/Slopsquatting';
 import { LocalStorageDB } from './pages/LocalStorageDB';
 import { RegexBomb } from './pages/RegexBomb';
+import { DivSoup } from './pages/DivSoup';
+import { SpinnerAnxiety } from './pages/SpinnerAnxiety';
+import { Barbenheimer } from './pages/Barbenheimer';
+import { VibeCommerce } from './pages/VibeCommerce';
 
 export default function App() {
   return (
@@ -28,6 +32,14 @@ export default function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         
+        {/* Phase 8 The Flagship SaaS */}
+        <Route path="/vibe-commerce" element={<VibeCommerce />} />
+
+        {/* Phase 7 AI Burnout */}
+        <Route path="/div-soup" element={<DivSoup />} />
+        <Route path="/spinner-anxiety" element={<SpinnerAnxiety />} />
+        <Route path="/barbenheimer" element={<Barbenheimer />} />
+
         {/* Phase 6 Advanced Arch Fails */}
         <Route path="/slopsquatting" element={<Slopsquatting />} />
         <Route path="/localstorage-db" element={<LocalStorageDB />} />

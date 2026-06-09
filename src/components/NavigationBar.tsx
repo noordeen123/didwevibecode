@@ -6,14 +6,14 @@ export function NavigationBar() {
 
   const links = [
     { name: 'Home', path: '/' },
+    { name: '🛍️ VibeCommerce', path: '/vibe-commerce' },
     { name: '🚨 True Stories', path: '/true-stories' },
+    { name: 'CEO vs Dev', path: '/barbenheimer' },
+    { name: 'Div Soup', path: '/div-soup' },
+    { name: 'Spinner', path: '/spinner-anxiety' },
     { name: 'Slopsquat', path: '/slopsquatting' },
     { name: 'DB', path: '/localstorage-db' },
-    { name: 'ReDoS', path: '/regex-bomb' },
     { name: 'Influence', path: '/thought-leader' },
-    { name: 'NPM', path: '/npm-install' },
-    { name: 'Tests', path: '/tests' },
-    { name: 'Productivity', path: '/productivity' },
   ];
 
   return (
@@ -36,9 +36,11 @@ export function NavigationBar() {
                 className={`text-xs md:text-sm font-black uppercase transition-all px-2 py-1 border-2 border-transparent shrink-0 ${
                   location.pathname === link.path 
                     ? 'text-black bg-cyan-400 border-black shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] md:shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] transform -rotate-2' 
-                    : link.name.includes('🚨') 
-                      ? 'text-white bg-red-600 border-black shadow-[4px_4px_0px_0px_rgba(255,255,255,1)] hover:bg-red-700 hover:rotate-3'
-                      : 'text-yellow-400 hover:bg-pink-500 hover:text-white hover:border-black hover:shadow-[4px_4px_0px_0px_rgba(255,255,255,1)] hover:rotate-3'
+                    : link.name.includes('🛍️')
+                      ? 'text-white bg-indigo-600 border-black shadow-[4px_4px_0px_0px_rgba(255,255,255,1)] hover:bg-indigo-700 hover:-translate-y-1'
+                      : link.name.includes('🚨') 
+                        ? 'text-white bg-red-600 border-black shadow-[4px_4px_0px_0px_rgba(255,255,255,1)] hover:bg-red-700 hover:rotate-3'
+                        : 'text-yellow-400 hover:bg-pink-500 hover:text-white hover:border-black hover:shadow-[4px_4px_0px_0px_rgba(255,255,255,1)] hover:rotate-3'
                 }`}
               >
                 {link.name}

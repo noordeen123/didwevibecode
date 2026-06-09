@@ -12,7 +12,17 @@ export function Home() {
     setAppKey(prev => prev + 1);
   };
 
+  const handleVibeCommerceClick = (e: React.MouseEvent) => {
+    e.preventDefault();
+    alert("Enterprise Security Check: You must authenticate using the Web3 AI Voice-Blockchain OTP before accessing VibeCommerce.");
+    document.getElementById('case-study-4')?.scrollIntoView({ behavior: 'smooth' });
+  };
+
   const pages = [
+    { name: 'VibeCommerce', path: '/vibe-commerce', desc: 'The flagship fully-broken E-commerce experience.' },
+    { name: 'CEO vs Dev', path: '/barbenheimer', desc: 'The reality of 10,000% productivity gains.' },
+    { name: 'Div Soup', path: '/div-soup', desc: 'Visually perfect, completely broken HTML.' },
+    { name: 'Spinner Anxiety', path: '/spinner-anxiety', desc: 'The 30-second wait to center a div.' },
     { name: 'Slopsquat', path: '/slopsquatting', desc: 'Install malware via AI package hallucinations.' },
     { name: 'DB Hacks', path: '/localstorage-db', desc: 'Why use Postgres when localStorage is free?' },
     { name: 'Regex Bomb', path: '/regex-bomb', desc: 'Trigger a server-freezing ReDoS attack.' },
@@ -42,6 +52,27 @@ export function Home() {
           </p>
         </div>
 
+        {/* FLAGSHIP VIBECOMMERCE HIGHLIGHT */}
+        <section className="bg-indigo-600 text-white p-8 md:p-12 border-8 border-black shadow-[16px_16px_0px_0px_rgba(255,255,255,1)] transform rotate-1 max-w-5xl mx-auto flex flex-col md:flex-row items-center justify-between gap-8 mb-24">
+          <div className="max-w-2xl">
+            <h2 className="text-4xl font-black uppercase tracking-tighter mb-4 flex items-center gap-3">
+              <span className="animate-bounce">🛍️</span> Try VibeCommerce
+            </h2>
+            <p className="text-xl font-medium mb-4">
+              We took everything wrong with AI coding and built an entire flagship E-commerce product page.
+            </p>
+            <p className="text-indigo-200 font-bold">
+              Inverse shopping carts, hallucinated dynamic pricing, and unclosable popups. It looks like Apple, but functions like a virus.
+            </p>
+          </div>
+          <button 
+            onClick={handleVibeCommerceClick}
+            className="bg-yellow-400 text-black hover:bg-white hover:scale-110 transition-all font-black uppercase px-8 py-4 border-4 border-black whitespace-nowrap text-xl shadow-[8px_8px_0px_0px_rgba(0,0,0,1)]"
+          >
+            Shop Now ➡️
+          </button>
+        </section>
+
         {/* TRUE STORIES HIGHLIGHT */}
         <section className="bg-red-600 text-white p-8 md:p-12 border-8 border-black shadow-[16px_16px_0px_0px_rgba(255,255,255,1)] transform -rotate-1 max-w-5xl mx-auto flex flex-col md:flex-row items-center justify-between gap-8 mb-24">
           <div className="max-w-2xl">
@@ -67,7 +98,7 @@ export function Home() {
         <section className="bg-pink-500 border-8 border-black p-8 shadow-[16px_16px_0px_0px_rgba(255,255,0,1)] transform rotate-1 mb-24">
           <h2 className="text-4xl font-black uppercase text-black mb-6 flex items-center gap-4">
             <span className="animate-bounce">👉</span> 
-            Explore the Parodies
+            Explore All Parodies
             <span className="animate-bounce" style={{animationDelay: '0.2s'}}>👈</span>
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
@@ -112,10 +143,11 @@ export function Home() {
           <SecurityVibes />
         </section>
 
-        <section>
+        <section id="case-study-4">
           <div className="text-center mb-8">
             <h2 className="text-sm font-bold tracking-widest text-yellow-400 uppercase">Case Study 04</h2>
             <p className="text-2xl font-medium text-gray-300">Web3 AI Voice-Blockchain OTP</p>
+            <p className="text-yellow-400 font-bold mt-2 animate-pulse uppercase">Login Required to access VibeCommerce</p>
           </div>
           <SecureSignup />
         </section>
