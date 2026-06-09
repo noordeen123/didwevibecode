@@ -12,19 +12,29 @@ jobs:
 
     steps:
     - uses: actions/checkout@v4
+
+    - name: Setup Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '20'
+        cache: 'npm'
     
     - name: Run NPM Install
       run: |
-        echo "Installing 14,000 dependencies..."
-        sleep 2
-        echo "Done."
+        echo "Downloading 14,000 NPM packages..."
+        npm install
 
-    - name: Run Linting
+    - name: Run Real Lint Checks
       run: |
-        echo "Ignoring all ESLint warnings because the vibes were right."
-        exit 0
+        echo "Checking if the code is actually valid..."
+        npm run lint
 
-    - name: Run Unit Tests
+    - name: Run Real Build Checks
+      run: |
+        echo "Ensuring the UI isn't completely broken..."
+        npm run build
+
+    - name: Run Fake Unit Tests
       run: |
         echo "Running test suite..."
         echo "Error: Test assertions not found."
