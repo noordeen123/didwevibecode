@@ -1,10 +1,12 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import { AlertTriangle, Phone } from 'lucide-react';
 
-export function SecureSignup({ onLogin }: { onLogin?: () => void }) {
+export function SecureSignup() {
   const [step, setStep] = useState(1);
   const [phone, setPhone] = useState(5555555555);
   const [actualOtp, setActualOtp] = useState<string | null>(null);
+  const navigate = useNavigate();
 
   const handleSendOtp = (e: React.FormEvent) => {
     e.preventDefault();
@@ -15,7 +17,7 @@ export function SecureSignup({ onLogin }: { onLogin?: () => void }) {
 
   const handleVerify = () => {
     alert(`Voice Recognition Success ✔️\nWe definitely heard you whisper "${actualOtp}" into your microphone.\n\nLogging you in...`);
-    if (onLogin) onLogin();
+    navigate('/vibe-commerce');
   };
 
   return (
