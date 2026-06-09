@@ -20,6 +20,8 @@ export function Home() {
 
   const pages = [
     { name: 'VibeCommerce', path: '/vibe-commerce', desc: 'The flagship fully-broken E-commerce experience.' },
+    { name: 'The Swarm', path: '/swarm-chaos', desc: '4 Agents arguing in an infinite loop while bankrupting you.' },
+    { name: 'AI Interview', path: '/ai-interview', desc: 'Pass the interview by hallucinating with the bot.' },
     { name: 'CEO vs Dev', path: '/barbenheimer', desc: 'The reality of 10,000% productivity gains.' },
     { name: 'Div Soup', path: '/div-soup', desc: 'Visually perfect, completely broken HTML.' },
     { name: 'Spinner Anxiety', path: '/spinner-anxiety', desc: 'The 30-second wait to center a div.' },

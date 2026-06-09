@@ -23,6 +23,8 @@ import { DivSoup } from './pages/DivSoup';
 import { SpinnerAnxiety } from './pages/SpinnerAnxiety';
 import { Barbenheimer } from './pages/Barbenheimer';
 import { VibeCommerce } from './pages/VibeCommerce';
+import { SwarmChaos } from './pages/SwarmChaos';
+import { AIInterview } from './pages/AIInterview';
 
 export default function App() {
   return (
@@ -32,6 +34,10 @@ export default function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         
+        {/* Phase 10 Swarm and Interviews */}
+        <Route path="/swarm-chaos" element={<SwarmChaos />} />
+        <Route path="/ai-interview" element={<AIInterview />} />
+
         {/* Phase 8 The Flagship SaaS */}
         <Route path="/vibe-commerce" element={<VibeCommerce />} />
 
