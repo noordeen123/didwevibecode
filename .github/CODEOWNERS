@@ -1,0 +1,13 @@
+# CODEOWNERS
+# Each line is a file pattern followed by one or more owners.
+# Owners are automatically requested for review when someone opens a PR.
+# More info: https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-code-owners
+
+# Global owner — @noordeen123 is the default reviewer for all files
+* @noordeen123
+
+# Workflows need extra attention
+.github/workflows/ @noordeen123
+
+# Documentation
+*.md @noordeen123
