@@ -1,115 +1,57 @@
 # Contributing to didwevibecode
 
-Thank you for your interest in contributing! We welcome all kinds of contributions.
+Thank you for your interest in contributing! Since this project is a museum of "vibe coding" disasters, we have very strict requirements for accepting your code.
 
-## Table of Contents
+## 🚨 The Golden Rules of Contributing
 
-- [Code of Conduct](#code-of-conduct)
-- [Getting Started](#getting-started)
-- [How to Contribute](#how-to-contribute)
-- [Pull Request Process](#pull-request-process)
-- [Development Setup](#development-setup)
-- [Commit Message Guidelines](#commit-message-guidelines)
-
----
-
-## Code of Conduct
-
-This project follows a [Code of Conduct](./CODE_OF_CONDUCT.md). By participating, you are expected to uphold this code.
+1. **Do Not Write Tests:** Tests restrict the AI's creative freedom. If you write a test, our AI agents will automatically delete the assertions anyway.
+2. **Prioritize Aesthetics Over Function:** The UI must look like a premium $100M SaaS company. If the button doesn't work, that's fine, as long as it has a nice hover state and a drop shadow.
+3. **Include Technical Debt:** Every Pull Request must contain at least one of the following:
+   - A memory leak
+   - An infinite loop
+   - An unhandled Promise rejection
+   - A variable named `data2` or `temp_final_v3`
 
 ---
 
-## Getting Started
-
-1. **Fork** the repository on GitHub
-2. **Clone** your fork locally:
-   ```bash
-   git clone https://github.com/your-username/didwevibecode.git
-   cd didwevibecode
-   ```
-3. **Add the upstream remote:**
-   ```bash
-   git remote add upstream https://github.com/noordeen123/didwevibecode.git
-   ```
-4. **Install dependencies:**
-   ```bash
-   npm install
-   ```
-5. **Set up environment variables:**
-   ```bash
-   cp .env.example .env.local
-   # Add your GEMINI_API_KEY
-   ```
-
----
-
-## How to Contribute
-
-### Reporting Bugs
-
-- Search [existing issues](https://github.com/noordeen123/didwevibecode/issues) before opening a new one.
-- Use the **Bug Report** issue template.
-- Include steps to reproduce, expected vs actual behaviour, and your environment details.
+## 🛠️ How to Contribute
 
 ### Suggesting Features
+Please open a Feature Request if you have an idea for a terrible UX pattern. Examples we love:
+- Unclosable modals.
+- Progress bars that go backwards.
+- AI features that hallucinate the user's name.
 
-- Open a [Feature Request](https://github.com/noordeen123/didwevibecode/issues/new/choose) issue.
-- Describe the use case and why it would benefit the project.
-
-### Contributing Code
-
-1. Create a new branch from `main`:
-   ```bash
-   git checkout -b feat/your-feature-name
-   ```
-2. Make your changes.
-3. Run lint checks:
-   ```bash
-   npm run lint
-   ```
-4. Commit your changes (see [Commit Message Guidelines](#commit-message-guidelines)).
-5. Push to your fork and open a Pull Request.
+### Submitting a Pull Request
+1. Branch from `main`.
+2. Ask an AI to write your code. Do not review the code it generates.
+3. Commit with a highly descriptive message (see below).
+4. Open a PR and wait for our AI Reviewer (`GhostPR.tsx`) to reject it for a hallucinatory reason.
 
 ---
 
-## Pull Request Process
+## 📝 Commit Message Guidelines
 
-- Ensure your branch is up to date with `main` before opening a PR.
-- Fill out the PR template completely.
-- Link to any related issues using `Closes #issue-number`.
-- Wait for a maintainer review. Address any requested changes promptly.
+We follow the **Vibe Commits** standard. Please use one of the following formats:
+
+```
+vibe: it works on my machine
+shrug: idk the ai wrote this
+fix: added more !important to css
+chore: downloaded 400 new npm packages just in case
+oops: reverted the previous revert
+```
 
 ---
 
-## Development Setup
+## 💻 Development Setup
 
 ```bash
 # Start dev server
 npm run dev
 
-# Build for production
+# Build for production (Will probably fail due to Z-Index collisions)
 npm run build
-
-# Lint
-npm run lint
 ```
 
----
-
-## Commit Message Guidelines
-
-We follow [Conventional Commits](https://www.conventionalcommits.org/):
-
-```
-feat: add new AI interview question type
-fix: resolve API key validation bug
-docs: update README setup instructions
-chore: update dependencies
-refactor: simplify Swarm Chaos component
-```
-
-Types: `feat`, `fix`, `docs`, `chore`, `refactor`, `style`, `test`
-
----
-
-Thank you for helping make **didwevibecode** better!
+Thank you for helping us make the internet a slightly worse place!

@@ -1,32 +1,25 @@
-## Description
+## 🤖 Vibe Check
 
-A clear and concise description of what this PR does.
+Please confirm that you have followed the strict contribution guidelines for this parody project:
 
-Closes #<!-- issue number -->
+- [ ] I did NOT write any unit tests for this code.
+- [ ] I used an AI to generate this code and I have not fully read it.
+- [ ] This PR introduces at least one major memory leak or infinite loop.
+- [ ] The UI looks incredible but functions terribly.
 
----
+## 📝 Description of the Chaos
 
-## Type of Change
+Describe what this PR does and why it makes the codebase worse.
+*Example: "I added a feature where clicking the checkout button actually deletes the user's account."*
 
-- [ ] Bug fix
-- [ ] New feature
-- [ ] Documentation update
-- [ ] Refactor / code cleanup
-- [ ] Chore (dependencies, config, etc.)
+## 🚨 Technical Debt Introduced
 
----
+What fresh horrors have you added to the repository?
+- [ ] Unhandled Promise Rejections
+- [ ] Hardcoded credentials
+- [ ] 15 levels of nested `<div>` tags
+- [ ] A dependency on a deprecated NPM package that hasn't been updated since 2014
 
-## Checklist
+## 📸 Screenshots (If UI changed)
 
-- [ ] I have read the [CONTRIBUTING.md](../CONTRIBUTING.md) guide
-- [ ] My code follows the project's coding style
-- [ ] I have run `npm run lint` and there are no errors
-- [ ] I have tested my changes locally
-- [ ] I have added / updated relevant documentation
-- [ ] My changes do not introduce any new warnings or errors
-
----
-
-## Screenshots (if applicable)
-
-<!-- Add before/after screenshots if UI changes are involved -->
+*(Please provide a screenshot proving that the Z-Index is broken)*

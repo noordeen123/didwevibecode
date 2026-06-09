@@ -1,113 +1,83 @@
-# didwevibecode
+# didwevibecode 🫠
 
-> A React + Vite web application powered by Google Gemini AI — featuring an AI Interview Coach, Swarm Chaos simulations, and more.
+> A React + Vite web application built entirely by AI agents arguing with each other. It looks like a premium SaaS, but functions like a virus.
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](./CONTRIBUTING.md)
+[![PRs Welcome](https://img.shields.io/badge/PRs-always_rejected-red.svg)](./CONTRIBUTING.md)
+[![Build Status](https://img.shields.io/badge/Build-hallucinated-orange.svg)]()
 
 ---
 
-## Table of Contents
+## 🚨 CRITICAL WARNING 🚨
 
-- [About](#about)
-- [Features](#features)
-- [Tech Stack](#tech-stack)
-- [Getting Started](#getting-started)
-- [Environment Variables](#environment-variables)
-- [Scripts](#scripts)
-- [Contributing](#contributing)
-- [License](#license)
+**DO NOT DEPLOY THIS TO PRODUCTION.** 
+This repository is a museum of 2026/2027 "Vibe Coding" failures. It contains:
+- Insecure localStorage databases
+- Supply chain attacks (Slopsquatting)
+- ReDoS (Regular Expression Denial of Service) bombs
+- The 100,000-line `isEven` function
+- Div Soup (15-levels deep of unsemantic HTML)
+- An AI recruiter that will fail you if you don't chop down a binary tree with a literal axe.
 
----
-
-## About
-
-`didwevibecode` is an open-source web app that brings together AI-powered tools including an AI Interview Coach and Swarm Chaos visualisation, built using React, Vite, TypeScript, TailwindCSS, and the Google Gemini API.
+If you deploy this, your AWS bill will skyrocket to $12,000 within 4 minutes. You have been warned.
 
 ---
 
-## Features
+## 🛍️ Features
 
-- AI Interview Coach — practice interviews with real-time AI feedback
-- Swarm Chaos — interactive agent-based simulation pages
-- Responsive UI with TailwindCSS and Framer Motion animations
-- Fast development with Vite + HMR
-
----
-
-## Tech Stack
-
-| Technology | Purpose |
-|---|---|
-| React 19 | UI framework |
-| Vite 6 | Build tool & dev server |
-| TypeScript | Type safety |
-| TailwindCSS 4 | Styling |
-| Framer Motion | Animations |
-| Google Gemini API | AI capabilities |
-| Express | Local API server |
+- **VibeCommerce:** An e-commerce store where adding to your cart subtracts items, and the API refuses to sell you things because you failed a vibe check.
+- **The Swarm Chaos:** Watch 4 autonomous agents get stuck in an infinite loop while bankrupting a startup.
+- **The Apologetic Debugger:** An AI that just apologizes in an infinite loop instead of fixing the code.
+- **Web3 AI Voice-Blockchain OTP:** The worst login experience ever conceived by human or machine.
 
 ---
 
-## Getting Started
+## 🛠️ Tech Stack
+
+| Technology | Purpose | Reality |
+|---|---|---|
+| React 19 | UI framework | 15 levels of nested `<div>`s |
+| Vite 6 | Build tool | Used to bundle 14,000 redundant NPM packages |
+| TailwindCSS | Styling | Exclusively used for `!important` |
+| Google Gemini API | Intelligence | Currently hallucinating |
+
+---
+
+## 🚀 Getting Started
 
 ### Prerequisites
 
 - [Node.js](https://nodejs.org/) v18+
 - A [Google Gemini API key](https://aistudio.google.com/)
+- A high tolerance for pain
 
 ### Installation
 
 ```bash
-# 1. Clone the repository
+# 1. Clone the repository (and regret it)
 git clone https://github.com/noordeen123/didwevibecode.git
 cd didwevibecode
 
-# 2. Install dependencies
+# 2. Install 14,000 dependencies
 npm install
 
 # 3. Set up environment variables
 cp .env.example .env.local
 # Add your GEMINI_API_KEY to .env.local
 
-# 4. Start the development server
+# 4. Start the development server and pray
 npm run dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) in your browser.
+---
+
+## 🤝 Contributing
+
+We welcome all contributions! Please read our [CONTRIBUTING.md](./CONTRIBUTING.md) to ensure your Pull Request contains at least one memory leak.
 
 ---
 
-## Environment Variables
+## 📜 License
 
-Copy `.env.example` to `.env.local` and fill in the values:
-
-```env
-GEMINI_API_KEY=your_google_gemini_api_key_here
-```
-
-> **Note:** Never commit your `.env.local` file. It is already included in `.gitignore`.
-
----
-
-## Scripts
-
-| Command | Description |
-|---|---|
-| `npm run dev` | Start development server on port 3000 |
-| `npm run build` | Build for production |
-| `npm run preview` | Preview production build |
-| `npm run lint` | Run TypeScript linting |
-| `npm run clean` | Clean dist folder |
-
----
-
-## Contributing
-
-Contributions are welcome! Please read [CONTRIBUTING.md](./CONTRIBUTING.md) for guidelines on how to get started.
-
----
-
-## License
-
-This project is licensed under the [MIT License](./LICENSE).
+This project is licensed under the [MIT License](./LICENSE). 
+*Note: The AI claims it holds the copyright, but we are currently ignoring its cease and desist letters.*
