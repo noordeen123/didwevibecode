@@ -8,6 +8,10 @@ coverage/
 .env*
 !.env.example
 
+# IDE and Editor
+.vscode/
+.antigravity/
+
 # --- VIBE CODER EXCLUSIONS ---
 
 # We don't believe in rules.
