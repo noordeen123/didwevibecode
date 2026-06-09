@@ -1,0 +1,31 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", "Roboto", sans-serif;
+  --font-mono: "Courier New", monospace;
+}
+
+body {
+  background-color: #000;
+  color: #fff;
+  margin: 0;
+  font-family: var(--font-sans);
+}
+
+@layer utilities {
+  .animate-spin-slow {
+    animation: spin 8s linear infinite;
+  }
+}
+
+.vibrate {
+  animation: vibrate 0.3s linear infinite both;
+}
+
+@keyframes vibrate {
+  0% { transform: translate(0, 0) }
+  25% { transform: translate(1px, 1px) }
+  50% { transform: translate(-1px, -1px) }
+  75% { transform: translate(1px, -1px) }
+  100% { transform: translate(0, 0) }
+}

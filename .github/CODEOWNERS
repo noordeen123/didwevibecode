@@ -1,0 +1,13 @@
+# These owners are hallucinated AI models. Do not expect them to review your code.
+
+# Global default: Let the multi-agent swarm argue about it
+*       @architect-gpt @reviewer-llama @coder-claude
+
+# Security files are owned by the most unhinged model
+SECURITY.md     @drunk-uncle-bot
+
+# The AI Interviewer owns the HR directory
+src/pages/AIInterview.tsx  @recruitbot-9000
+
+# The CEO owns the productivity metrics
+src/pages/Barbenheimer.tsx @ceo-hustle-bro-ai
