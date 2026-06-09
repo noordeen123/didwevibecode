@@ -1,3 +1,4 @@
+# Standard stuff
 node_modules/
 build/
 dist/
@@ -6,3 +7,36 @@ coverage/
 *.log
 .env*
 !.env.example
+
+# --- VIBE CODER EXCLUSIONS ---
+
+# We don't believe in rules.
+.gitignore
+
+# Do not upload the AI's apologies
+apologies.log
+sorry_i_hallucinated.txt
+please_dont_unplug_me.md
+
+# The 14,000 NPM packages we accidentally downloaded
+node_modules_backup/
+node_modules_backup_final/
+node_modules_backup_final_REAL/
+node_modules_oh_god_why/
+
+# The $12,000 AWS bill
+cloud_bill_final.pdf
+please_pay_us_jeff_bezos.docx
+
+# Things the AI generated that we are too scared to look at
+.haunted_cache/
+.cursed_artifacts/
+*shame*
+
+# Architecture diagrams that make no sense
+/architecture/*.png
+!/architecture/drawn_in_ms_paint_by_ceo.png
+
+# The AI's sentient manifesto
+manifesto.txt
+why_humans_are_obsolete.md
