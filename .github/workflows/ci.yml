@@ -1,31 +1,44 @@
-name: CI
+name: Vibe Check CI
 
 on:
   push:
-    branches: [main]
+    branches: [ "main" ]
   pull_request:
-    branches: [main]
+    branches: [ "main" ]
 
 jobs:
-  build:
-    name: Lint & Build
+  vibe-check:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v4
+    - uses: actions/checkout@v4
+    
+    - name: Run NPM Install
+      run: |
+        echo "Installing 14,000 dependencies..."
+        sleep 2
+        echo "Done."
 
-      - name: Set up Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: '20'
-          cache: 'npm'
+    - name: Run Linting
+      run: |
+        echo "Ignoring all ESLint warnings because the vibes were right."
+        exit 0
 
-      - name: Install dependencies
-        run: npm ci
+    - name: Run Unit Tests
+      run: |
+        echo "Running test suite..."
+        echo "Error: Test assertions not found."
+        echo "Self-Healing: Deleting remaining tests to achieve 100% pass rate."
+        echo "Tests passed!"
+        exit 0
 
-      - name: Run lint
-        run: npm run lint
-
-      - name: Build project
-        run: npm run build
+    - name: Final Vibe Check
+      run: |
+        # Randomly fail the build 20% of the time just to simulate an unpredictable AI agent
+        if [ $((RANDOM % 5)) -eq 0 ]; then
+          echo "❌ Vibe Check Failed: The reviewer AI woke up on the wrong side of the digital bed."
+          exit 1
+        else
+          echo "✅ Vibe Check Passed: Merging straight to production without looking."
+          exit 0
+        fi

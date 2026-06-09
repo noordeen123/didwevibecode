@@ -2,50 +2,22 @@
 
 ## Supported Versions
 
-We actively support the latest version on the `main` branch.
-
-| Version | Supported |
-|---|---|
-| `main` (latest) | ✅ |
-| Older commits | ❌ |
-
----
+| Version | Supported          | Reality |
+| ------- | ------------------ | ------- |
+| 1.0.x   | :white_check_mark: | Highly vulnerable to ReDoS attacks. |
+| 0.9.x   | :x:                | AI accidentally deleted all the tests. |
+| 0.8.x   | :x:                | Hardcoded AWS keys in the codebase. |
 
 ## Reporting a Vulnerability
 
-We take security issues seriously. If you discover a vulnerability in **didwevibecode**, please **do not** open a public GitHub issue.
+**DO NOT email us.** We do not care.
 
-### How to Report
+This entire project is an intentional security nightmare. We have built-in the following critical vulnerabilities on purpose:
 
-Please report security vulnerabilities by opening a [GitHub Security Advisory](https://github.com/noordeen123/didwevibecode/security/advisories/new) (private disclosure).
+1. **LocalStorage Database:** We store all "secure" data as plain text strings in `localStorage`. 
+2. **Supply Chain Attacks:** The `Slopsquatting` module explicitly downloads hallucinated malware packages.
+3. **Regex Bombs:** The `RegexBomb` component is designed to freeze your browser CPU.
 
-Include the following in your report:
-- A description of the vulnerability
-- Steps to reproduce
-docs: add SECURITY.md with vulnerability reporting policy- Any suggested fix (optional)
+If you find a *new* vulnerability that we haven't thought of, please open an issue and we will immediately add it to the `HallOfFame.tsx` as a feature.
 
-### What to Expect
-
-- **Acknowledgement** within 48 hours
-- **Status update** within 7 days
-- We will coordinate a fix and disclosure timeline with you
-- Credit will be given in the release notes if desired
-
----
-
-## Scope
-
-This project is a web application using the Google Gemini API. Security concerns in scope include:
-
-- API key exposure or leakage
-- Cross-site scripting (XSS)
-- Dependency vulnerabilities (supply chain)
-- Server-side injection issues
-
-**Out of scope:** Issues in third-party dependencies should be reported upstream to those projects directly.
-
----
-
-## Preferred Languages
-
-We prefer reports in **English**.
+Thank you for contributing to the chaos.

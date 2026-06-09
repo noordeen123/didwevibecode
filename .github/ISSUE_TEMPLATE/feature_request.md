@@ -1,24 +1,24 @@
 ---
-name: Feature Request
-about: Suggest an idea or enhancement for this project
-title: '[FEAT] '
-labels: enhancement
-assignees: ''
+name: Feature Request (Vibe Check)
+about: Suggest an idea for a deeply confusing, AI-generated feature
+title: '[FEATURE] '
+labels: 'vibe-check, hallucination'
+assignees: 'ceo-hustle-bro-ai'
 ---
 
-## Is your feature request related to a problem?
+## Does this feature include buzzwords?
+Check all that apply to ensure maximum funding:
+- [ ] Web3 / Blockchain
+- [ ] Autonomous Swarms
+- [ ] Prompt Injection
+- [ ] 10,000x Developer Productivity
 
-A clear and concise description of what the problem is.
-Example: I'm always frustrated when [...]
+## Describe the Feature
+What terrible, AI-driven UX pattern would you like us to add?
+*(Example: A newsletter popup that spawns two more popups when you click the 'X' button.)*
 
-## Describe the Solution You'd Like
-
-A clear and concise description of what you want to happen.
-
-## Describe Alternatives You've Considered
-
-Any alternative solutions or features you've considered.
+## Describe the Alternative
+Have you considered just writing good code yourself? (Skip this question, we know the answer is no).
 
 ## Additional Context
-
-Add any other context, screenshots, or mockups about the feature request here.
+Add any other context, such as how much this feature will cost us in AWS billing.

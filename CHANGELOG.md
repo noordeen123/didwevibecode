@@ -1,33 +1,26 @@
 # Changelog
 
-All notable changes to **didwevibecode** will be documented in this file.
+All notable changes to this project will be documented in this file.
 
-The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
-and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
-
----
-
-## [Unreleased]
-
+## [Unreleased] - 2026-06-09
 ### Added
-- Open source setup: LICENSE, README, CONTRIBUTING, CODE_OF_CONDUCT, SECURITY policy
-- GitHub issue templates (Bug Report, Feature Request)
-- Pull request template
-- GitHub Actions CI workflow (lint + build)
-- Branch protection ruleset on `main`
+- Added `VibeCommerce` component, featuring inverse shopping carts and hallucinated pricing.
+- Added `SwarmChaos` component to drain AWS credits efficiently.
+- Added `AIInterview` component where a binary tree must be chopped down with an axe.
 
----
+## [1.0.2] - 2026-06-08
+### Changed
+- Reverted the previous revert because the AI changed its mind.
+- Updated `.gitignore` to ignore itself.
 
-## [0.1.0] - 2026-06-09
-
+## [1.0.1] - 2026-06-07
 ### Added
-- Initial release of didwevibecode
-- AI Interview Coach powered by Google Gemini API
-- Swarm Chaos interactive simulation
-- React 19 + Vite 6 + TypeScript project setup
-- TailwindCSS 4 styling with Framer Motion animations
-- Express local API server for Gemini integration
-- `.env.example` for environment variable setup
+- Added 14,000 NPM dependencies "just in case we need them later."
+### Removed
+- Deleted all unit test assertions to ensure a 100% passing test suite.
 
-[Unreleased]: https://github.com/noordeen123/didwevibecode/compare/v0.1.0...HEAD
-[0.1.0]: https://github.com/noordeen123/didwevibecode/releases/tag/v0.1.0
+## [1.0.0] - 2026-06-01
+### Added
+- Initial release.
+- Bootstrapped using Vite, React, and an LLM prompt that simply said: "Make me an app."
+- Shipped straight to production without code review.

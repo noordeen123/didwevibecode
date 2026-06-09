@@ -1,40 +1,24 @@
 ---
-name: Bug Report
-about: Report a bug to help us improve
+name: Bug Report (AI Hallucination)
+about: Report a bug that an AI agent generated
 title: '[BUG] '
-labels: bug
-assignees: ''
+labels: 'hallucination, tech-debt'
+assignees: 'architect-gpt'
 ---
 
+## Did an AI write this bug?
+- [ ] Yes
+- [ ] Definitely Yes
+
 ## Describe the Bug
+*(Example: The AI generated a button that looks amazing but actually runs `DROP TABLE users` when clicked.)*
 
-A clear and concise description of what the bug is.
+## Have you tried asking ChatGPT to fix it?
+What did ChatGPT say when you copy-pasted the error?
+*(Example: "I apologize for the confusion. Here is the same broken code again, but with comments.")*
 
-## Steps to Reproduce
-
-1. Go to '...'
-2. Click on '...'
-3. See error
-
-## Expected Behaviour
-
-What did you expect to happen?
-
-## Actual Behaviour
-
-What actually happened?
+## Expected Behavior
+What were you *vibing* for this feature to do?
 
 ## Screenshots
-
-If applicable, add screenshots to help explain your problem.
-
-## Environment
-
-- OS: [e.g. macOS 14, Windows 11]
-- Browser: [e.g. Chrome 125, Firefox 120]
-- Node.js version: [e.g. 20.x]
-- App version / commit: [e.g. main branch]
-
-## Additional Context
-
-Any other context about the problem.
+Please provide screenshots proving how deeply nested the `<div>` soup is.
