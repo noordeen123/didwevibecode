@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
+import { Github } from 'lucide-react';
 
 export function NavigationBar() {
   const location = useLocation();
@@ -50,6 +51,15 @@ export function NavigationBar() {
                 {link.name}
               </Link>
             ))}
+            <a 
+              href="https://github.com/noordeen123/didwevibecode"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-white hover:text-pink-500 transition-colors ml-2 flex items-center justify-center shrink-0"
+              title="View Source on GitHub"
+            >
+              <Github className="w-5 h-5 md:w-6 md:h-6" />
+            </a>
           </div>
         </div>
       </nav>

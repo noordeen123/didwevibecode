@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import { Github } from 'lucide-react';
 import { FirstShotTrap } from '../components/FirstShotTrap';
 import { DeathSpiral } from '../components/DeathSpiral';
 import { SecurityVibes } from '../components/SecurityVibes';
@@ -156,14 +157,24 @@ export function Home() {
 
       </main>
 
-      {/* Global Reset Button */}
-      <div className="fixed bottom-8 left-1/2 transform -translate-x-1/2 z-50">
+      {/* Global Actions */}
+      <div className="fixed bottom-8 left-1/2 transform -translate-x-1/2 z-50 flex items-center gap-4">
         <button 
           onClick={handleNukeAndRebuild}
-          className="bg-red-600 hover:bg-red-700 text-white font-bold py-4 px-8 rounded-full shadow-[0_0_30px_rgba(220,38,38,0.6)] hover:scale-105 transition-transform flex items-center gap-2"
+          className="bg-red-600 hover:bg-red-700 text-white font-bold py-4 px-6 md:px-8 rounded-full shadow-[0_0_30px_rgba(220,38,38,0.6)] hover:scale-105 transition-transform flex items-center gap-2 whitespace-nowrap"
         >
           <span>☢️</span> NUKE & REBUILD
         </button>
+        <a 
+          href="https://github.com/noordeen123/didwevibecode"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="bg-black text-white hover:text-pink-500 font-bold py-4 px-6 md:px-8 rounded-full shadow-[0_0_30px_rgba(255,255,255,0.2)] border-2 border-gray-600 hover:border-pink-500 hover:scale-105 transition-all flex items-center gap-2 whitespace-nowrap"
+          title="View Source on GitHub"
+        >
+          <Github className="w-5 h-5" />
+          <span className="hidden md:inline">GITHUB</span>
+        </a>
       </div>
     </div>
   );
