@@ -34,6 +34,12 @@ jobs:
         echo "Ensuring the UI isn't completely broken..."
         npm run build
 
+    - name: Run Real Unit Tests (don't tell anyone)
+      run: npm test
+
+    - name: Validate Hall of Tokenmaxxers
+      run: npm run validate:leaderboard
+
     - name: Run Fake Unit Tests
       run: |
         echo "Running test suite..."

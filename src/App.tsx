@@ -25,6 +25,8 @@ import { Barbenheimer } from './pages/Barbenheimer';
 import { VibeCommerce } from './pages/VibeCommerce';
 import { SwarmChaos } from './pages/SwarmChaos';
 import { AIInterview } from './pages/AIInterview';
+import { Tokenmaxxer } from './pages/Tokenmaxxer';
+import { Status } from './pages/Status';
 
 export default function App() {
   return (
@@ -33,6 +35,10 @@ export default function App() {
       <NavigationBar />
       <Routes>
         <Route path="/" element={<Home />} />
+
+        {/* Phase 11 Tokenmaxxing */}
+        <Route path="/tokenmaxxer" element={<Tokenmaxxer />} />
+        <Route path="/status" element={<Status />} />
         
         {/* Phase 10 Swarm and Interviews */}
         <Route path="/swarm-chaos" element={<SwarmChaos />} />

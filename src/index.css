@@ -3,6 +3,7 @@
 @theme {
   --font-sans: "Inter", "Roboto", sans-serif;
   --font-mono: "Courier New", monospace;
+  --font-corporate: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Helvetica, Arial, sans-serif;
 }
 
 body {
@@ -28,4 +29,14 @@ body {
   50% { transform: translate(-1px, -1px) }
   75% { transform: translate(1px, -1px) }
   100% { transform: translate(0, 0) }
+}
+
+.shake {
+  animation: shake 0.35s ease-in-out;
+}
+
+@keyframes shake {
+  0%, 100% { transform: translateX(0) }
+  25% { transform: translateX(-4px) }
+  75% { transform: translateX(4px) }
 }
