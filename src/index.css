@@ -40,3 +40,46 @@ body {
   25% { transform: translateX(-4px) }
   75% { transform: translateX(4px) }
 }
+
+/* ☢️ Nuke & Rebuild. No strobing: the shake is a small jitter, the colour cycle is slow. */
+#root.nuke-shake {
+  animation: nuke-shake 0.1s linear infinite;
+}
+
+@keyframes nuke-shake {
+  0% { transform: translate(0, 0) rotate(0deg) }
+  25% { transform: translate(var(--nuke-amp, 6px), calc(var(--nuke-amp, 6px) * -1)) rotate(0.6deg) }
+  50% { transform: translate(calc(var(--nuke-amp, 6px) * -1), var(--nuke-amp, 6px)) rotate(-0.6deg) }
+  75% { transform: translate(var(--nuke-amp, 6px), var(--nuke-amp, 6px)) rotate(0.3deg) }
+  100% { transform: translate(0, 0) rotate(0deg) }
+}
+
+#root.nuke-glitch > div {
+  animation: nuke-hue 1.6s linear infinite;
+}
+
+#root.nuke-glitch * {
+  text-shadow: 3px 0 rgba(255, 0, 80, 0.8), -3px 0 rgba(0, 255, 255, 0.8);
+}
+
+@keyframes nuke-hue {
+  from { filter: hue-rotate(0deg) saturate(1.4) }
+  to { filter: hue-rotate(360deg) saturate(1.4) }
+}
+
+/* The only !important in this file is load-bearing. Tailwind is jealous. */
+#root.nuke-fall [data-nuke-piece] {
+  transform: translateY(140vh) rotate(var(--nuke-rot, 20deg)) !important;
+  opacity: 0 !important;
+  transition: transform 1.1s cubic-bezier(0.55, 0, 1, 0.45) var(--nuke-delay, 0ms), opacity 1.1s ease-in var(--nuke-delay, 0ms);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  #root.nuke-shake,
+  #root.nuke-glitch > div {
+    animation: none;
+  }
+  #root.nuke-fall [data-nuke-piece] {
+    transition: none;
+  }
+}
