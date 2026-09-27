@@ -7,6 +7,7 @@ export function NavigationBar() {
 
   const links = [
     { name: 'Home', path: '/' },
+    { name: '💸 Tokenmaxxer', path: '/tokenmaxxer' },
     { name: '🛍️ VibeCommerce', path: '/vibe-commerce' },
     { name: '🐝 The Swarm', path: '/swarm-chaos' },
     { name: '🤖 AI Interview', path: '/ai-interview' },
@@ -41,7 +42,7 @@ export function NavigationBar() {
                     ? 'text-black bg-cyan-400 border-black shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] md:shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] transform -rotate-2' 
                     : link.name.includes('🛍️')
                       ? 'text-white bg-indigo-600 border-black shadow-[4px_4px_0px_0px_rgba(255,255,255,1)] hover:bg-indigo-700 hover:-translate-y-1'
-                      : link.name.includes('🐝') || link.name.includes('🤖')
+                      : link.name.includes('🐝') || link.name.includes('🤖') || link.name.includes('💸')
                         ? 'text-black bg-yellow-400 border-black shadow-[4px_4px_0px_0px_rgba(255,255,255,1)] hover:bg-white hover:-translate-y-1'
                         : link.name.includes('🚨') 
                           ? 'text-white bg-red-600 border-black shadow-[4px_4px_0px_0px_rgba(255,255,255,1)] hover:bg-red-700 hover:rotate-3'

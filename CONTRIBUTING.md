@@ -14,6 +14,18 @@ Thank you for your interest in contributing! Since this project is a museum of "
 
 ---
 
+## 🏆 The One Contribution We Actually Want
+
+Beat the [Tokenmaxxer](https://www.didwevibecode.fun/tokenmaxxer) review cycle and add yourself to the **Hall of Tokenmaxxers**:
+
+1. Finish the game and click **Join the Hall of Tokenmaxxers**.
+2. Pick a handle. GitHub opens with `src/data/tokenmaxxers/<handle>.json` already filled in.
+3. Click **Propose changes**. That's your PR.
+
+Rules (CI checks them): the filename must match `handle`, the handle is at most 24 characters (letters, numbers, `_ . -`), the quote is at most 80 characters, and no links. Scores are self-reported, just like AI productivity gains.
+
+---
+
 ## 🛠️ How to Contribute
 
 ### Suggesting Features
